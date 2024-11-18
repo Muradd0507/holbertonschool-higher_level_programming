@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-number=int(input())
-print(f"{number} Battery street",end="\n")
+number = 98
+
+print(f"{number} Battery street")
