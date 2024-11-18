@@ -5,4 +5,4 @@ k=0
 kesir=int(number-int(number)*100)
 tam=int(number)
 netice=tam+kesir/100
-print(netice)
+print(f"Float: {netice}")
