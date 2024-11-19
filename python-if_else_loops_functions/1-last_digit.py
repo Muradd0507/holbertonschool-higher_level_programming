@@ -13,4 +13,4 @@ elif a == 0:
     d = "and is 0"
 else:
     d = "and is less than 6 and not 0"
-print("Last digit of {} is {}".format(number, a), end="\n")
+print("Last digit of {} is {} {}".format(number, a, d), end="\n")
