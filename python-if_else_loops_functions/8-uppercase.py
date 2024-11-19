@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
+    result = ""
     for i in str:
         if ord(i) in range(97, 123):
-            print("{}".format(chr(ord(i) - 32)), end="")
+            result += "{}".format(chr(ord(i) - 32))
+            print(result, end="")
         else:
-            print("{}".format(i), end="")
+            result += "{}".format(i)
+            print(result, end="")
     return True
-
-
-uppercase("best")
-uppercase("Best School 98 Battery street")
