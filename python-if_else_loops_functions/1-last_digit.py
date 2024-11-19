@@ -3,8 +3,8 @@ import random
 
 number = random.randint(-10000, 10000)
 if number < 0:
-    number = abs(number)
-    a = number % 10
+    number1 = abs(number)
+    a = number1 % 10
 else:
     a = number % 10
 if a > 5:
