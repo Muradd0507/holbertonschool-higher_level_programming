@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def islower(c):
-    if c.islower():
+    letter = ord(c)
+    if letter in range(97, 122):
         return True
-    else:
+    elif letter in range(65, 90):
         return False
