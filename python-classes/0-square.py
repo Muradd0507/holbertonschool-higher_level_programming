@@ -2,10 +2,13 @@
 """
 asvuhadhfdkushufhhsfe
 """
+
+
 class Square:
     """
     hfrehflrfrueeruig
     """
+
     def __init__(self, num):
-        self.id = num ** 2
+        self.num = num ** 2
         return self.id
