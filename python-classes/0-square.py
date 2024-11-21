@@ -10,5 +10,6 @@ class Square:
     """
 
     def __init__(self, num):
-        self.num = num ** 2
-        return self.id
+        self.num = num
+    def kar(self):
+        return self.num **2
