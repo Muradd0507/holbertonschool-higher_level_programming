@@ -11,7 +11,8 @@ class Square:
     try:
         def __init__(self, size=0):
             self.__size = size
-    except TypeError:
-        print("size must be an integer")
-    except ValueError:
-        print("size must be >= 0")
+    except Exception as e:
+        if isinstace(e, TypeError):
+            print("size must be an integer")
+        elif isinstace(e, ValueError):
+            print("size must be >= 0")
