@@ -48,9 +48,8 @@ class Rectangle:
 
     def __str__(self):
         if self.width > 0 and self.height > 0:
-            for i in range(self.height):
-                for j in range(self.width):
-                    print("#", end="")
-                print()
+            return "\n".join(["#" * self.width for _ in range(self.height)])
         else:
             print()
+
+
