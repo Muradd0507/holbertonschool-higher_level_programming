@@ -14,7 +14,7 @@ class Square:
         return self.__size
     @size.setter
     def size(self, value):
-        self__size=value
+        self.__size=value
         return self.__size
 
     def __init__(self, size=0):
