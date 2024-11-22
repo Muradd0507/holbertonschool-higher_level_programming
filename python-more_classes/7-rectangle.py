@@ -52,8 +52,12 @@ class Rectangle:
     def __str__(self):
         if self.width > 0 and self.height > 0:
             return "\n".join(
-                [str(self.print_symbol) * self.width for _ in range(self.height)]
+                [
+                    str(self.print_symbol) * self.width
+                    for _ in range(self.height)
+                ]
             )
+
         else:
             return ''
 
