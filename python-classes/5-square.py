@@ -38,5 +38,5 @@ class Square:
                 if k==0 or k==self.__size:
                     print("--")
                 print("#")
-                k+=1
+            k+=1
             print("\n")
