@@ -53,7 +53,7 @@ class Rectangle:
                     print("#", end="")
                 print()
         else:
-            print()
+            print("")
 
     def __repr__(self):
         print("Rectangle({}, {})".format(self.width, self.height))
