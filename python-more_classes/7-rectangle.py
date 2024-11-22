@@ -9,12 +9,12 @@ class Rectangle:
     hfewfhwer
     """
     number_of_instances = 0
-    print_symbol = "#"
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0, print_symbol = '#'):
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
+        self.print_symbol = print_symbol
 
     @property
     def width(self):
@@ -51,7 +51,7 @@ class Rectangle:
 
     def __str__(self):
         if self.width > 0 and self.height > 0:
-            return "\n".join([str(Rectangle.print_symbol) * self.width for _ in range(self.height)])
+            return "\n".join([str(self.print_symbol) * self.width for _ in range(self.height)])
         else:
             return ''
 
