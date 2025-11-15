@@ -2,4 +2,4 @@
 asc=''
 for i in range(97, 123):
     asc+=chr(i).lower()
-print("{}".format(asc))
+print("{}".format(asc), end = '')
