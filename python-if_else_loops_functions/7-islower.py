@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 islower = __import__('7-islower').islower
 def islower(c):
     if (ord(c)c>= 97 and ord(c) <= 122):
