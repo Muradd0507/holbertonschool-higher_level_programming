@@ -2,4 +2,4 @@
 asc=''
 for i in range(128):
     asc+=chr(i).lower()
-print(asc)
+print(str(asc))
