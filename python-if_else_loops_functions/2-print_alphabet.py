@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+asc=''
 for i in range(128):
-    print(chr(i).lower())
+    asc+=chr(i).lower()
+print(asc)
