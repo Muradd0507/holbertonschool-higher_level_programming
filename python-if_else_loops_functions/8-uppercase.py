@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
-    if (ord(str) >= 65 and ord(str) <= 90):
-        return True
-    else:
-        return False
+    result = ''
+    k = ''
+    for i in range(len(str)):
+        if (ord(str[i]) >=97 and ord(str[i]) <= 122):
+            k = chr(ord(str[i]) - 32)
+            result += k
+        else:
+            result += str[i]
+    return result
