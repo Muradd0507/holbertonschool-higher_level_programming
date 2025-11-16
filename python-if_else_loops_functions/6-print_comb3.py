@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-result = ''
-for i in range(0, 90):
-    if (i == 89):
-        result+="{:02} ".format(i)
-    else:
-        result+="{:02}, ".format(i)
-print(result)
+for i in range(9):
+    for j in range(1, 10):
+        if ("{}{} ".format(i, j) == "{}{} ".format(j, i)):
+            continue
+        else:
+            if (i == 8 and j == 9):
+                print("{}{}".format(i, j), end='')
+            else:
+                print("{}{} ".format(i, j), end=',')
