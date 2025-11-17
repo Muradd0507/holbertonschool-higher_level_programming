@@ -11,4 +11,3 @@ if __name__ == "__main__":
         print(f"{count} argument{'s' if count > 1 else ''}:")
         for i, arg in enumerate(args, 1):
             print(f"{i}: {arg}")
-
