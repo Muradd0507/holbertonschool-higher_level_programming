@@ -4,4 +4,8 @@ def print_matrix_integer(matrix=[[]]):
         k = 0
         for j in i:
             print("{:d}".format(j), end=' ')
-        print("\n")
+        if (k == len(matrix)):
+            pass
+        else:
+            print("\n")
+        k += 1
