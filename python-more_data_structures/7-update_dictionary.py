@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
-    a_dictionary[key] = value
     for i, j in a_dictionary.items():
-        print("{}: {}".format(i, j))
+        if (i == a_dictionary[key]):
+            a_dictionary[key] = value
+    return a_dictionary
