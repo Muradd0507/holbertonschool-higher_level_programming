@@ -3,9 +3,11 @@ def safe_print_list_integers(my_list=[], x=0):
     count = 0
     for i in range(x):
         try:
+            # integer-ləri çap etməyə çalışırıq
             print("{:d}".format(my_list[i]), end="")
-                count += 1
-        except (ValueError, TypeError):
-            pass  # integer deyil → sadəcə keç
+            count += 1
+        except (TypeError, ValueError):
+            # integer olmayanlar → sakitcə keç
+            pass
     print()
     return count
