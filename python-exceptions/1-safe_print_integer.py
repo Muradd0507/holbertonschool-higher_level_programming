@@ -2,6 +2,9 @@
 def safe_print_integer(value):
     try:
         test = value + 1
+        value_int = int(value)
+        if (value != value_int):
+            return True
     except (ValueError, TypeError):
         return False
     else:
