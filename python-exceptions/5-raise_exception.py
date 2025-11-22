@@ -4,4 +4,3 @@ def raise_exception():
         start = int("aaa")
     except:
         raise
-    return start
