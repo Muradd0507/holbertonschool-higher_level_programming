@@ -4,7 +4,7 @@ def safe_print_integer(value):
         test = value + 1
         value_int = int(value)
         if (value != value_int):
-            return True
+            return False
     except (ValueError, TypeError):
         return False
     else:
