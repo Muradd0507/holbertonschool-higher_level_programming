@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def raise_exception():
-    start = int("aaa")
+    try:
+        start = int("aaa")
+    except:
+        raise
     return start
