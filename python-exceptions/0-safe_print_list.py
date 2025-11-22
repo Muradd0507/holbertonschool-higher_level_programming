@@ -2,12 +2,13 @@
 def safe_print_list(my_list=[], x=0):
     k = 0
     try:
-        for i in my_list:
+        for i in range(x):
             if (k < x):
-                print("{:d}".format(i), end='')
+                print(my_list(i), end='')
             k += 1
         print()
         return k
 
     except IndexError:
-        return None
+        print()
+        return k
