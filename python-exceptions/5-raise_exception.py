@@ -4,5 +4,5 @@ def raise_exception():
     b = 2
     try:
         c = a + b
-    except:
+    except TypeError:
         raise
