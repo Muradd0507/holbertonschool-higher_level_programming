@@ -58,11 +58,9 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#")
-            print()
 
     def __repr__(self):
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#")
-            print()
 
