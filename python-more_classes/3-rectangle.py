@@ -66,12 +66,4 @@ class Rectangle:
         return result
 
     def __repr__(self):
-        result = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                result += "#"
-            if (i == (self.__height - 1)):
-                pass
-            else:
-                result += "\n"
-        return result
+        return f"<{self.__class__.__module__}.{self.__class__.__name__} object at {hex(id(self))}>"
