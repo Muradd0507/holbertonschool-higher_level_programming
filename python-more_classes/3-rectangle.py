@@ -55,13 +55,17 @@ class Rectangle:
             return 2 * (self.__width + self. __height)
 
     def __str__(self):
+        result = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#")
-            print("\n")
+                result += "#"
+            result += "\n"
+        return result
 
     def __repr__(self):
+        result = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#")
-            print("\n")
+                result += "#"
+            result += "\n"
+        return result
