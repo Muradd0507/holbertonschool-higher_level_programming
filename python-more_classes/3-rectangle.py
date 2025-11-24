@@ -59,7 +59,10 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 result += "#"
-            result += "\n"
+            if (i == (self.__height - 1)):
+                pass
+            else:
+                result += "\n"
         return result
 
     def __repr__(self):
@@ -67,5 +70,8 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 result += "#"
-            result += "\n"
+            if (i == (self.__height - 1)):
+                pass
+            else:
+                result += "\n"
         return result
