@@ -12,9 +12,9 @@ class Rectangle:
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
-        if (self.__width or self.__height is not int):
+        if (type(self.__width) is not int or type(self.__height) is not int):
             raise TypeError("width must be an integer")
-        elif (self.__width or self.__height <= 0):
+        if (self.__width <= 0 or self.__height <= 0):
             raise ValueError("width must be >= 0")
 
     @property
