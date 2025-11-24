@@ -56,13 +56,16 @@ class Rectangle:
 
     def __str__(self):
         result = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                result += "#"
-            if (i == (self.__height - 1)):
-                pass
-            else:
-                result += "\n"
+        if if (self.__width == 0 or self.__height == 0):
+            pass
+        else:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    result += "#"
+                if (i == (self.__height - 1)):
+                    pass
+                else:
+                    result += "\n"
         return result
 
     def __repr__(self):
