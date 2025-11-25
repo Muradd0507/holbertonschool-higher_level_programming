@@ -1,3 +1,4 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> BaseGeometry()
 <__main__.BaseGeometry object at 0x...>
 >>> b = BaseGeometry()
