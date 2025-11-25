@@ -1,4 +1,7 @@
->>> MyList = _import_('1-my_list').MyList
+>>> def _import_(file):
+    	"""Imports a module"""
+    	import importlib
+    	return importlib.import_module(file.replace('.py', ''))
 >>> my_list = MyList()
 >>> my_list
 []
