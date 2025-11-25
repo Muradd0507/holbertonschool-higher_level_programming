@@ -4,7 +4,7 @@ aaa
 """
 
 
-class Mylist(list):
+class MyList(list):
     """
     inherits from list
     """
