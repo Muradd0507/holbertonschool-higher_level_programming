@@ -7,4 +7,4 @@ def lookup(obj):
     """
     returnn
     """
-    return list(obj.__dict__)
+    return dir(obj)
