@@ -4,6 +4,9 @@ Write a function that returns True if the object is exactly an instance of the s
 """
 
 def is_same_class(obj, a_class):
+    """
+    Checks, if obj isinstance a_class returns true
+    """
     if (isinstance(obj, a_class)):
         return True
     else:
