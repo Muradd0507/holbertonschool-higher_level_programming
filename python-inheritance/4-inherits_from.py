@@ -4,7 +4,7 @@ Write a function that cheks isinstance
 """
 
 
-def is_same_class(obj, a_class):
+def inherits_from(obj, a_class):
     """
     Checks, if obj isinstance a_class returns true
     """
