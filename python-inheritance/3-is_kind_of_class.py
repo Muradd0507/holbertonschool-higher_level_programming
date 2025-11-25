@@ -6,7 +6,7 @@ Write a function that cheks isinstance
 
 def is_same_class(obj, a_class):
     """
-    Checks, if obj isinstance a_class returns true
+    Checks
     """
     if (isinstance(obj, a_class)):
         return True
