@@ -4,7 +4,7 @@ Write a function that cheks isinstance
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     Checks
     """
