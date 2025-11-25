@@ -6,10 +6,10 @@ Rectangle class
 
 class Rectangle:
     """Defines a rectangle"""
-    count = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        count += 1
+        number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -57,9 +57,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        count -= 1
-
-    @staticmethod
-    def number_of_instances():
-        return count
-
+        number_of_instances -= 1
