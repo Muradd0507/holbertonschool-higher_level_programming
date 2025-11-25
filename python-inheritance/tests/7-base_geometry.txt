@@ -1,3 +1,16 @@
-[TypeError] name must be an integer
-[ValueError] age must be greater than 0
-[ValueError] distance must be greater than 0
+>>> BaseGeometry()
+<__main__.BaseGeometry object at 0x...>
+>>> b = BaseGeometry()
+>>> b.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+>>> b.integer_validator("height", 10)
+>>> b.integer_validator("width", -5)
+Traceback (most recent call last):
+    ...
+ValueError: width must be greater than 0
+>>> b.integer_validator("size", "10")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
