@@ -8,7 +8,6 @@ class MyList(list):
     """
     inherits from list
     """
-    print(self)
 
     def print_sorted(self):
-        return sorted(self)
+        print(sorted(self))
