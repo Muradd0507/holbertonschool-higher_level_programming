@@ -48,9 +48,18 @@ class Rectangle:
 
     def __str__(self):
         """Print rectangle using #"""
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        return "\n".join([str(self.print_symbol) * self.__width for _ in range(self.__height)])
+        result = ''
+        if (self.__width == 0 or self.__height == 0):
+            pass
+        else:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    result += str(self.print_symbol)
+                if (i == (self.__height - 1)):
+                    pass
+                else:
+                    result += "\n"
+            return result
 
     def __repr__(self):
         """Return string used by eval()"""
