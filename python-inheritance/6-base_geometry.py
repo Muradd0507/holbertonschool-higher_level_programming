@@ -8,7 +8,7 @@ class BaseGeometry:
     """
     empty class
     """
-    
+
     def area(self):
         """
         if area is not defined, raise exception
