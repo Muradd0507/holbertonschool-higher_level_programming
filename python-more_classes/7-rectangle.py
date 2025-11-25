@@ -7,9 +7,9 @@ Rectangle class
 class Rectangle:
     """Defines a rectangle"""
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        print_symbol = "#"
         Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
@@ -50,7 +50,7 @@ class Rectangle:
         """Print rectangle using #"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        return "\n".join([self.print_symbol * self.__width for _ in range(self.__height)])
+        return "\n".join([Rectangle.print_symbol * self.__width for _ in range(self.__height)])
 
     def __repr__(self):
         """Return string used by eval()"""
