@@ -52,7 +52,7 @@ class Rectangle:
         if (self.__width == 0 or self.__height == 0):
             return 0
         else:
-            return 2 * (self.__width + self. __height)
+            return 2 * (self.__width + self.__height)
 
     def __str__(self):
         result = ''
@@ -69,4 +69,4 @@ class Rectangle:
         return result
 
     def __repr__(self):
-        return f"<{self.__class__.__module__}.{self.__class__.__name__} object at {hex(id(self))}>"
+        return f"<{type(self).__module__}.{type(self).__name__} object at {hex(id(self))}>"
