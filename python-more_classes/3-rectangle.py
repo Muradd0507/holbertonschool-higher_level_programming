@@ -69,4 +69,8 @@ class Rectangle:
         return result
 
     def __repr__(self):
-        return f"<{type(self).__module__}.{type(self).__name__} object at {hex(id(self))}>"
+        return (
+            f"<{type(self).__module__}."
+            f"{type(self).__name__} object at "
+            f"{hex(id(self))}>"
+        )
