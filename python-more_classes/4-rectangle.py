@@ -52,4 +52,3 @@ class Rectangle:
     def __repr__(self):
         """Return string used by eval()"""
         return f"Rectangle({self.__width}, {self.__height})"
-
