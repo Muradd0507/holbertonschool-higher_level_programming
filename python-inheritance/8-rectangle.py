@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import 7-base_geometry.BaseGeometry
 """
 Rectangle
 """
