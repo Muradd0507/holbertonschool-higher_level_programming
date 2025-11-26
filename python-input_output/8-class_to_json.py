@@ -8,5 +8,5 @@ def class_to_json(obj):
     """
     dsdfdbfdgfh
     """
-    s = dir(obj)
+    s = str(dir(obj))
     return s
