@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-import json
 """
 JSON
 """
+import json
 
 
 def to_json_string(my_obj):
     """
     JSON
     """
-    return my_obj.dump()
+   return json.dump(my_obj)
