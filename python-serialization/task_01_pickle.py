@@ -23,7 +23,7 @@ class CustomObject:
         try:
             with open(filename, 'rb') as f:
 
-        except Exception as e:
+        except (FileNotFoundError, pickle.UnpicklingError):
             return None
 
         else:
