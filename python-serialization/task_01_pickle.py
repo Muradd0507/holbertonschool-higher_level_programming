@@ -20,6 +20,6 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, 'r') as f:
+        with open(filename, 'rb') as f:
             result = pickle.load(f)
         return result
