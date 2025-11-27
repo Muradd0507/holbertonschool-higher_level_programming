@@ -22,8 +22,10 @@ class CustomObject:
     def deserialize(cls, filename):
         try:
             with open(filename, 'rb') as f:
+
         except Exception as e:
             return None
+
         else:
             result = pickle.load(f)
-            return result
+            return pickle
