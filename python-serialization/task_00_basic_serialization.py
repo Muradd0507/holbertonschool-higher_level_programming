@@ -4,7 +4,6 @@ def serialize_and_save_to_file(data, filename):
     # Your code here to serialize and save data to the specified file
     with open(filename, 'w', encoding='utf-8') as f:
         result = json.dump(data, f)
-        f.write(result)
         return result
 
 def load_and_deserialize(filename):
