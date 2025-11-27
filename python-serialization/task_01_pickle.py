@@ -14,7 +14,7 @@ class CustomObject:
         print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
-        with open(filename, 'w') as f:
+        with open(filename, 'wb') as f:
             result = pickle.dumps(self)
             f.write(result)
 
