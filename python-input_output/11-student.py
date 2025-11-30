@@ -2,7 +2,6 @@
 """
 dbjkdbvdskv
 """
-import json
 
 
 class Student:
