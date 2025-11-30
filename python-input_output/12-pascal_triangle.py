@@ -5,6 +5,9 @@ pascal triade
 
 
 def pascal_triangle(n):
+    """
+    function
+    """
     if (n <= 0):
         return []
 
