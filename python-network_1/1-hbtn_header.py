@@ -4,6 +4,7 @@ import sys
 """
 Take URLs
 """
+sys.argv = ['1-hbtn_header.py', 'https://intranet.hbtn.io']
 url = sys.argv[1]
 
 with urllib.request.urlopen(url) as u:
