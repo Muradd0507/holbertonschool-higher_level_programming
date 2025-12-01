@@ -10,6 +10,7 @@ url = 'https://intranet.hbtn.io/status'
 req = urllib.request.Request(url, headers={'cfclearance': 'true'})
 with urllib.request.urlopen(req) as url:
     u = url.read()
+    print("Body response:")
     print(f"\t- type: {type(u)}")
     print(f"\t- content: {u}")
     print(f"\t- utf8 content: {u.decode('utf-8')}")
