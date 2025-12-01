@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import usrllib
+import urllib
 import sys
 """
 Take URLs
