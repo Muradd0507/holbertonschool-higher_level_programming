@@ -2,7 +2,7 @@
 """
 dssdf
 """
-import urllib
+import urllib.request
 """
 This module is using for handling URLs
 """
