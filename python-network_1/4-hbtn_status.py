@@ -2,11 +2,11 @@
 """
 URL fetching
 """
-import usrllib.request
+import requests
 
 url = 'https://intranet.hbtn.io/status'
 head = {'cfclearance': 'true'}
-req = request.Request(url, headers=head)
-with request.urlopen(req) as u:
-    res = u.read().decode('utf-8')
-    print(res)
+req = requests.get(url, headers=head)
+print("Body response:\n")
+print(f"\t- {type(req)}")
+print(f"\t- {req.text}")
