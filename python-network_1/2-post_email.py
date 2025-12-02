@@ -6,6 +6,7 @@ import urllib.request
 import urllib.parse
 import sys
 
+sys.argv = ['2-post_email.py', 'http://0.0.0.0:5000/post_email', 'hr@holbertonschool.com']
 url = sys.argv[1]
 email = sys.argv[2]
 
