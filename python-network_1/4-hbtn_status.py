@@ -5,8 +5,7 @@ URL fetching
 import requests
 
 url = 'https://intranet.hbtn.io/status'
-head = {'cfclearance': 'true'}
-req = requests.get(url, headers=head)
-print("Body response:\n")
+req = requests.get(url)
+print("Body response:")
 print(f"\t- type: {type(req.text)}")
-print(f"\t- content: {req.text}", end='')
+print(f"\t- content: {req.text}")
