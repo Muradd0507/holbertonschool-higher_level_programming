@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Taking Headers
+"""
 import requests
 import sys
 if __name__ == "__main__":
