@@ -10,8 +10,8 @@ if __name__ == "__main__":
 
     data = {"email": email}
     encoded = urllib.parse.urlencode(data).encode("utf-8")
-
-    req = urllib.request.Request(url, data=encoded, headers={'cfclearance': 'true'})
+    head = {'cfclearance': 'true'}
+    req = urllib.request.Request(url, data=encoded, headers=head)
 
     with urllib.request.urlopen(req) as response:
         body = response.read().decode("utf-8")
