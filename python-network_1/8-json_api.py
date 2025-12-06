@@ -15,10 +15,9 @@ s
 url = 'http://0.0.0.0:5000/search_user'
 try:
     q = sys.argv[1]
-except:
+except IndexError:
     q = ""
-res = requests.post(url, data=q)
-
+res = requests.post(url, data={'q', q})
 try:
     json_data = res.json()
     if json_data == {} or json_data == []:
