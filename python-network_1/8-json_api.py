@@ -17,7 +17,7 @@ try:
     q = sys.argv[1]
 except:
     q = ""
-res = requests.post(url, data=q, method='POST')
+res = requests.post(url, data=q)
 
 try:
     json_data = res.json()
