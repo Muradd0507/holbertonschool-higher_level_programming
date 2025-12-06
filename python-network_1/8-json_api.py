@@ -1,31 +1,13 @@
 #!/usr/bin/python3
-"""
-json api
-"""
-import requests
-"""
-r
-"""
-import sys
-"""
-s
-"""
+import requests, sys
 
-
-url = 'http://0.0.0.0:5000/search_user'
+q = sys.argv[1] if len(sys.argv) > 1 else ""
 try:
-    q = sys.argv[1]
-except IndexError:
-    q = ""
-res = requests.post(url, data={'q', q})
-try:
-    json_data = res.json()
-    if json_data == {} or json_data == []:
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+    j = r.json()
+    if not j:
         print("No result")
     else:
-        print("{} {}".format(json_data['id'], json_data['name']))
-
+        print(f"[{j.get('id')}] {j.get('name')}")
 except requests.exceptions.JSONDecodeError:
-    print("Data is not json")
-
-
+    print("Not a valid JSON")
