@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import requests, sys
+import requests
+import sys
 
 q = sys.argv[1] if len(sys.argv) > 1 else ""
 try:
