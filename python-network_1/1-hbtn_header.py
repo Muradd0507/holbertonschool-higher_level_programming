@@ -1,12 +1,21 @@
 #!/usr/bin/python3
-import urllib
-import sys
-"""
-Take URLs
-"""
-sys.argv = ['1-hbtn_header.py', 'https://intranet.hbtn.io']
-url = sys.argv[1]
+'''
+This is doing pythoning here
+'''
 
-with urllib.request.urlopen(url) as u:
-    value = response.headers.get("X-Request-Id")
-    print(value)
+import urllib.request
+import sys
+
+
+def fetch(url):
+    with urllib.request.urlopen(url) as response:
+        headers = response.info()
+        print(headers.get('X-Request-Id'))
+
+
+if __name__ == "__main__":
+    try:
+        url = sys.argv[1]
+        fetch(url)
+    except Exception as e:
+        print("Error: {}".format(e))
